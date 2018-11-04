@@ -35,7 +35,7 @@ LABELS = [
 ]
 
 # Preparing data set
-DATASET_PATH = "HAR_data/"
+DATASET_PATH = "../data/"
 TRAIN = "train/"
 TEST = "test/"
 
