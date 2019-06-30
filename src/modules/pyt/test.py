@@ -1,4 +1,2 @@
-from pyt.fibo import fibo1
-
-fibo1(20)
+print("Hello World!")
 
