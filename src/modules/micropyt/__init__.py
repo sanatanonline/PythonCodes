@@ -1,0 +1,1 @@
+print("micropyt __init__ is called")
