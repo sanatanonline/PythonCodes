@@ -22,10 +22,15 @@ app.url_map.converters['registered'] = RegisteredUser
 
 @app.route('/api/person/<registered:name>')
 def person(name):
-    response = jsonify({'Hello hey': name})
+    print(request)
+    print(request.environ)
+    response = jsonify({'Hello ': name})
+
+    print(response)
+    print(response.data)
     return response
 
 
 if __name__ == '__main__':
-    print(app.url_map)
+    print("app.url_map-->" + app.url_map.__str__())
     app.run()
