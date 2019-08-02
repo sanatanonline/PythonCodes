@@ -32,7 +32,7 @@ print(labels)
 fig = plt.figure()
 ax = fig.add_subplot(111)
 ax.scatter(group[1:0], group[2:0])
-#plt.show()
+plt.show()
 
 predicted_class = classify0([0, 0], group, labels, 3)
 print(predicted_class)
