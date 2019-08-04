@@ -89,7 +89,7 @@ def load_y(y_path):
     )
     file.close()
 
-    # Subtract 1 to each output class for friendly 0-based indexing
+    # Subtract 1 to each output classify for friendly 0-based indexing
     return y_ - 1
 
 
