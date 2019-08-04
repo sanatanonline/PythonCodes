@@ -42,7 +42,7 @@ train_y = np.asarray(train.motor_UPDRS.values)
 test_x1 = np.asarray(test.Jitter.values)
 test_y = np.asarray(test.motor_UPDRS.values)
 
-# initialize the linear regression model
+# initialize the linear regr model
 linear = linear_model.LinearRegression()
 
 # TRAINING

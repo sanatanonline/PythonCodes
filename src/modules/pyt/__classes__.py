@@ -8,7 +8,7 @@ print(p1.x)
 
 class Person:
     def __init__(self, name, age):
-        print("init is called")
+        print("test is called")
         self.name = name
         self.age = age
 

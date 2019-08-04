@@ -1,6 +1,6 @@
 class Person:
     def __init__(self, f_name, l_name):
-        print("parent init is called")
+        print("parent test is called")
         self.f_name = f_name
         self.l_name = l_name
 
@@ -14,7 +14,7 @@ x = Person("John", "Doe")
 
 class Student(Person):
     def __init__(self, f_name, l_name, age):
-        print("child init is called")
+        print("child test is called")
         Person.__init__(self, f_name, l_name)
         self.age = age
 
