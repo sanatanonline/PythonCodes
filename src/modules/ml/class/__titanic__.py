@@ -1,12 +1,13 @@
 import pandas as pd
 
-
 # load the data from csv file
-df = pd.read_csv('C:/view/opt/apps/code/local/ml-data/titanic/train.csv')
+df = pd.read_csv('/opt/apps/ml-data/class/titanic/train.csv')
 
 # print the data
-print("Variables are:", list(df))
-print("Total number of records", len(df))
+features = list(df)
+number_of_records = len(df)
+print("Variables are:", features)
+print("Total number of records", number_of_records)
 
 
 
