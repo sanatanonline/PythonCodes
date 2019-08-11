@@ -2,14 +2,11 @@ Source: https://www.klipfolio.com/resources/articles/what-is-data-visualization
 
 The 11 Most Common Graph Types
 ----------------------------------
-1. Bar Chart
-2. Line Chart
-3. Scatterplot
-4. Sparkline
-5. Pie Chart
-6. Gauge
-7. Waterfall Chart
-8. Funnel Chart
-9. Heat Map
-10. Histogram
-11. Box Plot
+1. Bar Chart (done)
+2. Line Chart (done)
+3. Scatter Plot (done)
+4. Stack Plot or Area Plot (done)
+5. Pie Chart (done)
+6. Histogram (done)
+7. Box Plot (done)
+8. Heat Map (done)
