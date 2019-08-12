@@ -16,7 +16,7 @@ def do_first_analysis():
     df = pd.read_csv(StringIO(content['file_content']), sep=",")
     print(df.shape)
     response = jsonify({'shape ': df.shape})
-    return jsonify(response)
+    return response
 
 
 app.run(host='0.0.0.0', port='8090')
