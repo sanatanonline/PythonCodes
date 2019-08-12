@@ -1,6 +1,8 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
+import pandas as pd
+from io import StringIO
 
 app = Flask(__name__)
 
@@ -10,9 +12,11 @@ def do_first_analysis():
     # print(request.is_json)
     content = request.get_json()
     # print(type(content))
-    print(content)
-    response = jsonify({'device ': content['device'], 'value': content['value'], 'timestamp': content['timestamp']})
-    return response
+    # print(content['file_content'])
+    df = pd.read_csv(StringIO(content['file_content']), sep=",")
+    print(df.shape)
+    response = jsonify({'shape ': df.shape})
+    return jsonify(response)
 
 
 app.run(host='0.0.0.0', port='8090')
