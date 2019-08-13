@@ -14,8 +14,12 @@ def do_first_analysis():
     # print(type(content))
     # print(content['file_content'])
     df = pd.read_csv(StringIO(content['file_content']), sep=",")
-    print(df.shape)
-    response = jsonify({'shape ': df.shape})
+    number_of_samples = len(df)
+    number_of_features = 12
+    features = list(df)
+    response = jsonify(
+        {'shape': str(df.shape), 'number_of_samples': number_of_samples, 'number_of_features': number_of_features,
+         'features': features})
     return response
 
 
