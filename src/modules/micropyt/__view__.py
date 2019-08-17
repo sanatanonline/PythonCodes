@@ -4,7 +4,6 @@ from flask import jsonify
 import pandas as pd
 from io import StringIO
 
-
 app = Flask(__name__)
 
 

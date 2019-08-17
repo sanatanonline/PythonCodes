@@ -1,1 +1,1 @@
-print("micropyt __init__ is called")
+print("__init__ is called")
