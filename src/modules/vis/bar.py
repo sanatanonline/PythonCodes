@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 from io import BytesIO
-from PIL import Image
 
 x1 = ["red", "blue", "green", "orange", "yellow"]
 y1 = [5, 2, 7, 8, 2]

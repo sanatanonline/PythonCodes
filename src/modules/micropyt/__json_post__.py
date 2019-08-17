@@ -5,6 +5,7 @@ import pandas as pd
 from io import StringIO
 import matplotlib.pyplot as plt
 from io import BytesIO
+import base64
 
 x1 = ["red", "blue", "green", "orange", "yellow"]
 y1 = [5, 2, 7, 8, 2]
@@ -26,6 +27,8 @@ fig = plt.figure()
 figdata = BytesIO()
 fig.savefig(figdata, format='png')
 d = figdata.getvalue()
+print(type(d))
+d = base64.b64encode(d)
 #print(d)
 
 app = Flask(__name__)
