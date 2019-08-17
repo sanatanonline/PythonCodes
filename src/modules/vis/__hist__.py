@@ -8,7 +8,6 @@ plt.hist(x, bins, histtype="step", rwidth=0.8)
 plt.title("Histogram")
 plt.xlabel("X-axis data")
 
-
 plt.legend()
 
 plt.show()
