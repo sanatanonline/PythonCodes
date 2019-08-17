@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from io import BytesIO
+from PIL import Image
 
 x1 = ["red", "blue", "green", "orange", "yellow"]
 y1 = [5, 2, 7, 8, 2]
@@ -15,4 +17,9 @@ plt.ylabel("Y-axis data")
 
 plt.legend()
 
-plt.show()
+# plt.show()
+fig = plt.figure()
+buf = BytesIO()
+plt.savefig(buf, format='png')
+print(type(buf.getvalue()))
+buf.close()
