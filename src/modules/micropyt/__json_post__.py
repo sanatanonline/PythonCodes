@@ -26,10 +26,9 @@ plt.legend()
 fig = plt.figure()
 figdata = BytesIO()
 fig.savefig(figdata, format='png')
-d = figdata.getvalue()
-print(type(d))
-d = base64.b64encode(d)
-#print(d)
+figdata.seek(0)
+d = base64.b64encode(figdata.read())
+print(d)
 
 app = Flask(__name__)
 
