@@ -11,7 +11,7 @@ print(test.shape)
 # set the index to passengerId
 train = train.set_index('PassengerId')
 
-# identify datatypes of the 11 columns, add the stats to the datadict
+# identify data types of the 11 columns, add the stats to the datadict
 datadict = pd.DataFrame(train.dtypes)
 # print(datadict)
 
@@ -26,8 +26,8 @@ datadict['NUnique'] = train.nunique()
 
 # Identify the count for each variable, add the stats to datadict
 datadict['Count'] = train.count()
-#print(datadict)
-#print(datadict.to_json(orient="table"))
+# print(datadict)
+# print(datadict.to_json(orient="table"))
 
 # rename the 0 column
 datadict = datadict.rename(columns={0: 'DataType'})
@@ -35,10 +35,10 @@ print(datadict)
 print(datadict.shape)
 
 
-# get discripte statistcs on "object" datatypes
-#print(train.describe(include=['object']))
+# get descriptive statistics on "object" datatypes
+# print(train.describe(include=['object']))
 
-# get discriptive statistcs on "number" datatypes
-#print(train.describe(include=['number']))
+# get descriptive statistics on "number" datatypes
+# print(train.describe(include=['number']))
 
-#print(train.Survived.value_counts(normalize=True))
+# print(train.Survived.value_counts(normalize=True))
