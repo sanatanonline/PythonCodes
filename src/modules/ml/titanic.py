@@ -1,6 +1,6 @@
 import pandas as pd
 
-import ml.classify.data as dt
+import ml.data as dt
 
 train, test = dt.load_titanic_data()
 
@@ -31,7 +31,8 @@ datadict['Count'] = train.count()
 
 # rename the 0 column
 datadict = datadict.rename(columns={0: 'DataType'})
-print(datadict)
+res = datadict.reset_index()
+print(res)
 print(datadict.shape)
 
 

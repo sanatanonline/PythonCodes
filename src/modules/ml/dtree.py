@@ -1,12 +1,7 @@
-import ml.classify.data as loader
-import pandas as pd
-import numpy as np
+import ml.data as loader
 
-from matplotlib import pyplot as plt
-import seaborn as sns
-
-from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
-from sklearn.model_selection import cross_val_score, GridSearchCV, train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import cross_val_score
 from sklearn.preprocessing import LabelEncoder
 
 train_df, test_df = loader.load_titanic_data()

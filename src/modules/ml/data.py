@@ -12,6 +12,11 @@ def load_forestfires_data():
     return forestfires
 
 
-load_titanic_data()
+def load_housing_data():
+    housing = pd.read_csv('/opt/apps/ml-data/quant/housing/housing.csv')
+    return housing
 
+
+load_titanic_data()
 load_forestfires_data()
+load_housing_data()

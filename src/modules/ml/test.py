@@ -1,4 +1,4 @@
-import ml.classify.kNN as kNN
+import ml.kNN as kNN
 import matplotlib.pyplot as plt
 
 # kNN algorithm using sample data
